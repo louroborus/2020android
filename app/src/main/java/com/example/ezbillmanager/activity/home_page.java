@@ -33,6 +33,7 @@ public class home_page extends AppCompatActivity {
     private Button btn_payment;
     private ImageView img_write;
     private TextView tv_sentence;
+    private TextView textView3;
 
     private RecyclerView mRecyclerView;
     private Time date;
@@ -63,6 +64,7 @@ public class home_page extends AppCompatActivity {
         btn_piechart = findViewById(R.id.btn_piechart);
         btn_payment = findViewById(R.id.btn_payment);
         putbill = findViewById(R.id.putbill);
+        textView3=findViewById(R.id.textView3);
         //putbill.setMovementMethod(ScrollingMovementMethod.getInstance());
 
 
@@ -74,6 +76,15 @@ public class home_page extends AppCompatActivity {
         tv_month = findViewById(R.id.tv_month);
         expnum = findViewById(R.id.tv_expendnum);
         incomum = findViewById(R.id.tv_incomenum);
+
+        //跳转至查询页面
+        textView3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(home_page.this, query.class);
+                startActivity(intent);
+            }
+        });
 
         //加号键：跳转至记账页面
         btn_add.setOnClickListener(new View.OnClickListener() {
