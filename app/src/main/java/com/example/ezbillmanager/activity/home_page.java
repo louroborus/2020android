@@ -31,8 +31,8 @@ public class home_page extends AppCompatActivity {
     private Button btn_add;
     private Button btn_piechart;
     private Button btn_payment;
-    private ImageView img_write;
-    private TextView tv_sentence;
+    //private ImageView img_write;
+    //private TextView tv_sentence;
     private TextView textView3;
 
     private RecyclerView mRecyclerView;
@@ -69,8 +69,8 @@ public class home_page extends AppCompatActivity {
 
 
 
-        img_write = findViewById(R.id.img_write);
-        tv_sentence = findViewById(R.id.tv_sentence);
+        //img_write = findViewById(R.id.img_write);
+        //tv_sentence = findViewById(R.id.tv_sentence);
         btn_down = findViewById(R.id.btn_up);
         btn_up = findViewById(R.id.btn_down);
         tv_month = findViewById(R.id.tv_month);
