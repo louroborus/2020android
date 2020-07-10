@@ -146,9 +146,9 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/home_page_R_4"
+            android:id="@+id/query_page_R_4"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="150dp"
             android:layout_below="@id/query_page_R_3"
             android:background="@drawable/frame">
 
@@ -157,31 +157,28 @@
                 android:id="@+id/query_btn1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="150dp"
-                android:layout_marginTop="50dp"
-                android:layout_marginEnd="150dp"
-                android:layout_marginBottom="180dp"
+                android:layout_centerInParent="true"
                 android:text="查询" />
 
-            <Button
-                android:id="@+id/query_btn2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="150dp"
-                android:layout_marginTop="140dp"
-                android:layout_marginEnd="150dp"
-                android:layout_marginBottom="90dp"
-                android:text="返回" />
+
         </RelativeLayout>
 
+
+    <RelativeLayout
+        android:id="@+id/query_page_R_5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/query_page_R_4"
+        android:background="@drawable/frame">
+
+        <Button
+            android:id="@+id/query_btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="返回" />
+
+    </RelativeLayout>
 
  </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
