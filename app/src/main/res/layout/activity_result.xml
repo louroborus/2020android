@@ -116,7 +116,7 @@
 
 
             <TextView
-                android:id="@+id/tv_expend"
+                android:id="@+id/result_tv_expend"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
@@ -126,18 +126,18 @@
                 android:textSize="12sp" />
 
             <TextView
-                android:id="@+id/tv_expendnum"
+                android:id="@+id/result_tv_expendnum"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:layout_toRightOf="@id/tv_expend"
+                android:layout_toRightOf="@id/result_tv_expend"
                 android:layout_marginTop="8dp"
                 android:text="¥0.00"
                 android:textColor="#333333"
                 android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/tv_income"
+                android:id="@+id/result_tv_income"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="330dp"
@@ -146,10 +146,10 @@
                 android:textSize="12sp" />
 
             <TextView
-                android:id="@+id/tv_incomenum"
+                android:id="@+id/result_tv_incomenum"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/tv_income"
+                android:layout_toRightOf="@id/result_tv_income"
                 android:layout_marginTop="8dp"
                 android:text="¥0.00"
                 android:textColor="#FF0000"
@@ -174,7 +174,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/putbill"
+                android:id="@+id/result_putbill"
                 android:scrollbars="vertical"
                 android:fadeScrollbars="false"
                 android:orientation="vertical" />

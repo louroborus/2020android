@@ -34,7 +34,6 @@ public class query extends AppCompatActivity {
         Date6 = findViewById(R.id.query_editTextNumber6);
         btn_1 = findViewById(R.id.query_btn1);
         btn_2 = findViewById(R.id.query_btn2);
-
         //判断输入的信息，启动和传入结果页面
         btn_1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,9 +41,11 @@ public class query extends AppCompatActivity {
                 if(Date1.getText().length()!=0&&Date2.getText().length()!=0&&Date3.getText().length()!=0
                 &&Date4.getText().length()!=0&&Date5.getText().length()!=0&&Date6.getText().length()!=0)
                 {
-                    Intent intent = new Intent(query.this,result.class);
-                   intent.putExtra("startdate",Date1.getText()+"."+Date2.getText()+"."+Date3.getText());
-                    intent.putExtra("enddate",Date4.getText()+"."+Date5.getText()+"."+Date6.getText());
+                    Intent intent = new Intent(query.this, result.class);
+                    Bundle bundle = new Bundle();
+                    bundle.putString("startdate",Date1.getText()+"."+Date2.getText()+"."+Date3.getText());
+                    bundle.putString("enddate",Date4.getText()+"."+Date5.getText()+"."+Date6.getText());
+                    intent.putExtras(bundle);
                     startActivity(intent);
                 }
                 else
