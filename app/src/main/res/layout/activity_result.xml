@@ -23,7 +23,7 @@
                 android:background="@drawable/up"/>
 
             <TextView
-                android:id="@+id/home_page_tv_1"
+                android:id="@+id/result_page_tv_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
@@ -157,38 +157,45 @@
 
         </RelativeLayout>
 
-        <RelativeLayout
+        <ScrollView
             android:id="@+id/result_page_R_5"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@id/result_page_R_4"
             android:background="@drawable/frame">
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/result_recylerView"
+            <!--<androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/id_recylerView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-            </androidx.recyclerview.widget.RecyclerView>
+            </androidx.recyclerview.widget.RecyclerView>-->
 
-            <ImageView
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/putbill"
+                android:scrollbars="vertical"
+                android:fadeScrollbars="false"
+                android:orientation="vertical" />
+
+            <!--<ImageView
                 android:id="@+id/img_write"
                 android:layout_width="160dp"
                 android:layout_height="160dp"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="60dp"
-                android:background="@drawable/write" />
+                android:background="@drawable/write" />-->
 
-            <TextView
+            <!--<TextView
                 android:id="@+id/tv_sentence"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/img_write"
                 android:layout_centerHorizontal="true"
-                android:text="无账单"
-                android:textSize="17sp" />
-        </RelativeLayout>
-
+                android:text=""
+                android:textSize="17sp" />-->
+        </ScrollView>
 
 
     </RelativeLayout>
